@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="script.js"  ></script>
+    <script src="dbChrome.js"  ></script>
+    <script src="loadstorage.js"  ></script>
+    <script src="dbFirefox.js"  ></script>
+    <script src="localstorage.js"  ></script>
+
+    <title>ToDo-Liste</title>
+</head>
+
+<body style="margin: 0px" >
+
+    <div class="body">
+
+
+        <div class="navibar" id="navbar">
+            <form class="navbarForm" action="#">
+                <label onclick="deleteAllITEMS()">Liste löschen</label>
+            </form>
+        </div>
+
+
+        <div class="title">
+            <img class="picture-todo" src="to-do-list.png"></p>
+            <div class="title-btn">
+                <p>ToDo Liste</p>
+                <button onclick="navbaropen()"></button>
+            </div>
+        </div>
+    
+        <div class="text-button">
+    
+           
+                <div class="input-label">
+                    <input id="txtfield" type="text">
+                    <label >To Do einfuegen!</label>
+                </div>
+                <div class="btn">
+                    <button id="BtnHinzu"  class="addBtn">Hinzufuegen</button>
+                </div>
+    
+    
+        </div>
+    
+        <div class="toDoItems">
+
+        </div>
+        <div class="deleteButton">
+            <button id="deleteBtn">Löschen</button>
+        </div>
+    </div>
+
+    <div class="bottom-header">
+        <p>made by EnisSolac</p>
+    </div>
+
+
+
+</body>
+</html>
